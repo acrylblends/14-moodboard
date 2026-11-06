@@ -5,10 +5,11 @@ import type { Context } from '@deepseek-ai/cordis'
 import type { BoardState } from './domain.ts'
 import { Boards, type BoardsAdapters } from './boards.ts'
 import { jsonFileStore, type Store } from './store.ts'
+export * from './art.ts'
 export * from './boards.ts'
 export * from './domain.ts'
 export * from './store.ts'
-export { seed } from './seed.ts'
+export { seed, SEED_FACTS } from './seed.ts'
 declare module '@deepseek-ai/cordis' { interface Context { boards: Boards } }
 export interface BoardsConfig { readonly store?: Store<BoardState>; readonly clock?: () => Date; readonly newId?: BoardsAdapters['newId']; readonly file?: string }
 export const name = 'boards'
