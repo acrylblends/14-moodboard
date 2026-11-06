@@ -1,0 +1,36 @@
+apiVersion: blends.acryl.dev/v1alpha1
+kind: Blueprint
+metadata:
+  id: acrylblends.moodboard
+  name: "Moodboard"
+  version: 0.1.0
+  category: 3d-cad-design
+  description: "A freeform design board: reference images, notes, colour palettes and text placed as draggable objects on a project canvas."
+  license: MIT
+  visibility: public
+spec:
+  runtime: cordis
+  parameters:
+    hostname: { type: string, default: 127.0.0.1 }
+  rows:
+    - id: router
+      name: acryl-router
+    - id: home
+      name: home
+    # The domain: boards, free-positioned objects and reference assets, saved as JSON in the app's data home.
+    - id: boards
+      name: boards
+    # The field-notes top bar with the project crumb and save actions.
+    - id: board-shell
+      name: board-shell
+    # The canvas, the reference assets and the board settings.
+    - id: board
+      name: board
+    - id: extensions
+      name: extensions
+    - id: server
+      name: acryl-node-server
+      config:
+        hostname: "{{parameters.hostname}}"
+    - id: acryl-door
+      name: acryl-door

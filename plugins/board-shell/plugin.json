@@ -1,0 +1,9 @@
+{
+  "name": "board-shell",
+  "description": "The Moodboard's page shell: the field-notes top bar with the project crumb and the save actions, and the toast/copy script.",
+  "requires": [],
+  "inject": ["boards", "router"],
+  "provides": ["shell"],
+  "dependencies": { "@deepseek-ai/cordis": "4.0.4" },
+  "mount": "a row `- id: board-shell` / `name: board-shell` after the boards row and before the board page row in blend.yaml; a page injects `shell`"
+}

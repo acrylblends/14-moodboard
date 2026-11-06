@@ -1,0 +1,9 @@
+{
+  "name": "boards",
+  "description": "The Moodboard's domain: boards, free-positioned objects and reference assets, saved as JSON in the app's data home. The page plugin injects it.",
+  "requires": [],
+  "inject": ["appInstance"],
+  "provides": ["boards"],
+  "dependencies": { "@deepseek-ai/cordis": "4.0.4" },
+  "mount": "a row `- id: boards` / `name: boards` before the page rows in blend.yaml; a page injects the `boards` service"
+}

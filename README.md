@@ -1,17 +1,22 @@
 # Moodboard
 
-Arrange reference images, colours, notes and visual ideas on a spatial canvas for a design project.
+A freeform design board: reference images, notes, colour palettes and text placed as draggable objects on a project canvas.
 
-An ACRYL Blends blueprint for the **3D / CAD / Design** category (`acrylblends.moodboard`, category 14 of 100).
-
-Status: designed, being built. `design/spec.md` is the specification and `design/mockup.html` the mockup (open it in a browser). The app itself,
-composed from Cordis plugins (one `plugins/<feature>/` folder and one `blend.yaml` row per feature), lands here when it passes review.
-
-When it is ready you will start it with:
+## Run it
 
 ```sh
-npm create acrylblends@latest my-app -- --from acrylblends.moodboard
-cd my-app && npm install && npm run dev
+npm install
+npm start
 ```
 
-Listed on https://acrylblends.github.io/blends and https://acryl.dev/blends.
+Open the address it prints. `npm test` runs the tests (node:test; no network, no key).
+
+## What to ask the chat next
+
+- Drag the direction note to a new spot and reload to see the saved position.
+- Add a colour palette object and edit its text in the board settings.
+- Remove an object with the layers list and save the board.
+
+## Screenshot
+
+![Moodboard](docs/screenshot.png)
