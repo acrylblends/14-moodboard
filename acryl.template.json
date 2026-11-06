@@ -1,5 +1,5 @@
 {
   "name": "Moodboard",
-  "description": "A freeform design board: reference images, notes, colour palettes and text placed as draggable objects on a project canvas.",
+  "description": "A spatial direction board: six draggable objects, three reference images, a palette rail, layers, an asset library, board settings and a JSON export.",
   "plugins": []
 }
